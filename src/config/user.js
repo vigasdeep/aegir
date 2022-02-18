@@ -131,6 +131,7 @@ const defaults = {
 const config = (searchFrom) => {
   let userConfig
   try {
+    console.log('Before configExplorer');
     const configExplorer = lilconfigSync('aegir', {
 
       searchPlaces: [
@@ -139,7 +140,11 @@ const config = (searchFrom) => {
         '.aegir.cjs'
       ]
     })
+    console.log('After configExplorer');
+
     const lilconfig = configExplorer.search(searchFrom)
+    console.log('after lilConfig');
+
     if (lilconfig) {
       userConfig = lilconfig.config
     } else {
