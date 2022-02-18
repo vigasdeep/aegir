@@ -140,7 +140,7 @@ const config = (searchFrom) => {
         '.aegir.cjs'
       ]
     })
-    console.log('After configExplorer');
+    console.log('After configExplorer', configExplorer);
 
 //     const lilconfig = configExplorer.search(searchFrom)
 //     console.log('after lilConfig');
