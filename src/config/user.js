@@ -142,14 +142,15 @@ const config = (searchFrom) => {
     })
     console.log('After configExplorer');
 
-    const lilconfig = configExplorer.search(searchFrom)
-    console.log('after lilConfig');
+//     const lilconfig = configExplorer.search(searchFrom)
+//     console.log('after lilConfig');
 
-    if (lilconfig) {
-      userConfig = lilconfig.config
-    } else {
+//     if (lilconfig) {
+//       userConfig = lilconfig.config
+//     } else {
       userConfig = {}
-    }
+//     }
+    console.log('manually ovveride config');
   } catch (err) {
     console.error(err)
     throw new Error('Error finding your config file.')
